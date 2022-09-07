@@ -52,10 +52,14 @@ alert(
 /* ---- Practice Level: 1 ---- */
 
 // 1.1: Clearing Local Storage
-/*
-localStorage.clear();
-console.log("Cleared Entire LocalStorage");
-*/
+function clearLocalStorage() {
+  localStorage.clear();
+  console.log("Cleared Entire LocalStorage");
+
+  //Initializing Counter
+  //to avoid UI error
+  initializeCounter(true);
+}
 
 // 1.2: Set a Local Storage Item
 localStorage.setItem("name", "Sakib Khan");
